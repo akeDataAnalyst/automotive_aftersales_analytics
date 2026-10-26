@@ -42,39 +42,4 @@ An integrated, 3-tier analytical architecture designed to ingest, model, predict
 
 ---
 
-## **Project Repository Structure**
-
-```text
-automotive_aftersales_analytics/
-│
-├── data/
-│   ├── raw/                 # Relational DMS Parquet datasets (Branches, Techs, ROs, CRM)
-│   └── processed/           # Engineered customer lifecycle and performance datasets
-│
-├── notebooks/
-│   ├── 01_workshop_performance_eda.ipynb      # Workshop operations & revenue yield EDA
-│   ├── 02_customer_segmentation_rfm.ipynb     # Customer lifecycle & RFM cohort analysis
-│   └── 03_churn_predictive_modeling.ipynb     # Gradient Boosting churn classification model
-│
-├── models/
-│   └── churn_gradient_boosting_model.pkl      # Saved trained ML classifier artifact
-│
-├── app/
-│   ├── app.py                                 # Main Streamlit application entry point & router
-│   └── pages/
-│       ├── 01_Executive_Overview.py           # Network revenue & KPI scorecards
-│       ├── 02_Branch_Benchmark.py             # Side-by-side branch & bay capacity comparison
-│       ├── 03_Customer_Retention.py           # Lifecycle segment & spend analytics
-│       ├── 04_Workshop_Efficiency.py          # Technician productivity & FTFR quality control
-│       ├── 05_Campaign_Performance.py         # Outbound CRM channel ROI (WhatsApp, SMS, Calls)
-│       └── 06_Retention_Risk_Radar.py         # ML churn prediction & actionable CRM lead export
-│
-├── src/
-│   └── data_generator.py                      # Synthetic DMS data generation pipeline
-│
-├── requirements.txt                           # Project dependencies
-└── README.md                                  # Project documentation
-
----
-
 ## **Developed By Aklilu Abera | Data Analyst**
